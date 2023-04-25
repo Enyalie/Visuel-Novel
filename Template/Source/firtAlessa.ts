@@ -10,7 +10,7 @@ namespace Template {
         //Bar ambience == Mute
         //Play Footsteps
         await ƒS.update(5);
-        await ƒS.Character.show(characters.alessaButWithoutName, characters.stella.pose.normal, ƒS.positionPercent(0, 0));
+        await ƒS.Character.show(characters.alessaButWithoutName, characters.alessaButWithoutName.pose.normal, ƒS.positionPercent(0, 0));
         await ƒS.update();
         await ƒS.Speech.tell(characters.narrator, "....");
         await ƒS.Speech.tell(characters.narrator, "....");
@@ -39,16 +39,16 @@ namespace Template {
         // lachen Alessa Einspielen
         await ƒS.Speech.tell(characters.alessaButWithoutName, "Okay Barkeeper, ich mag sie. Was halten sie von einem Spiel? Ich bräuchte wirklich ein wenig Ablenkung von dem ganzen Elend");
 
-        let dialog1 = {
+        let keineWahl = {
             iPickYes: "Okay, lass uns Spielen"
 
         };
 
-        let dialogueElement = await ƒS.Menu.getInput(dialog1, "choicesCSSClass");
+        let dialoguekeineWahl = await ƒS.Menu.getInput(keineWahl, "choicesCSSClass");
 
-        switch (dialogueElement) {
+        switch (dialoguekeineWahl) {
             //Path Yes for Game
-            case dialog1.iPickYes:
+            case keineWahl.iPickYes:
                 console.log("Path Yes for Game");
                 await ƒS.Speech.tell(characters.barkeeper, "Okay was schlagen Sie vor?");
                 await ƒS.Speech.tell(characters.alessaButWithoutName, "Danke ihnen, okay für den Anfang einfach nur ein Rätselspiel. Nichts besonderes");
@@ -151,6 +151,7 @@ namespace Template {
                     await ƒS.Speech.tell(characters.alessaButWithoutName, "ich hoffe sie haben unser kleines Rätselspiel auch so sehr genossen.");
                     await ƒS.Speech.tell(dataForSave.nameBarkeeper, "Es war auf jeden Fall mal etwas anderes. Nächstes Mal, schaffe ich aber alle ihre Rätsel zu lösen", true, "spieler");
                     await ƒS.Speech.tell(characters.alessaButWithoutName, " Wir werden sehen, in der Tat das werden wir.");
+                    dataForSave.variableRätselsceneAlessa1 = true;
                     break;
                 }
 

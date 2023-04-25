@@ -7,7 +7,7 @@ namespace Template {
         await ƒS.Location.show(locations.citySteampunk);
         //await ƒS.Character.show(characters.narrator, ƒS.positionPercent(70, 100));
         //Play Bar ambience
-        await ƒS.Speech.tell(characters.narrator, "Ein Mann betritt die Bar und läut Zielstrebig zur Theke, hinter ihm bildet sich eine Spur aus schwarzten Blut");
+        await ƒS.Speech.tell(characters.narrator, "Ein Mann betritt die Bar und läut Zielstrebig zur Theke, hinter ihm bildet sich eine Spur aus schwarzen Blut");
         await ƒS.update(3);
         await ƒS.Character.show(characters.elidibusButWithoutName, characters.elidibusButWithoutName.pose.normal, ƒS.positionPercent(0, 0));
         await ƒS.update();
@@ -35,7 +35,7 @@ namespace Template {
         await ƒS.Speech.tell(characters.elidibusButWithoutName, "Was ich davon halte?");
         await ƒS.Speech.tell(characters.elidibusButWithoutName, "eine vielversprechende Jagd würde ich sagen");
         //Show Elidibus weggedreht
-        await ƒS.Speech.tell(characters.elidibusButWithoutName, "Wir sehen uns in 3 Tagen");
+        await ƒS.Speech.tell(characters.elidibusButWithoutName, "Wir sehen uns in 2 Wochen");
         await ƒS.Speech.tell(dataForSave.nameBarkeeper, "Ach eines noch Jäger", true, "Spieler");
         await ƒS.Speech.tell(dataForSave.nameBarkeeper, "Nächstes mal, sagt mir doch bitte den wahren grund");
         //Speeker Elidibus tzz einspielen

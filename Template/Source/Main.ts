@@ -116,7 +116,7 @@ namespace Template {
       name: "Alessa",
       origin: ƒS.ORIGIN.BOTTOMCENTER,
       pose: {
-        normal: ""
+        normal: "Images/Charakter/Alessa.PNG"
       }
     },
 
@@ -134,15 +134,28 @@ namespace Template {
       pose: {
         normal: ""
       }
+    },
+
+    Ira:{
+      name: "Ira",
+      origin: ƒS.ORIGIN.BOTTOMCENTER,
+      pose: {
+        normal: "Images/Charakter/DancingIraleft.PNG",
+        right: "Images/Charakter/DancingIraright.PNG"
+      }
     }
   };
+
+  
 
 
 
 
   //*data will be safed (game progress)*//
   export let dataForSave = {
-    nameBarkeeper: ""
+    nameBarkeeper: "",
+    variableKristalhöhle: false,
+    variableRätselsceneAlessa1: false
 
   };
 
@@ -151,7 +164,7 @@ namespace Template {
     gameMenu = ƒS.Menu.create(ingameMenubuttosn, buttonFunctionalities, "gameMenuCSSClass");
     // ****SCENE HIERACHY!!!!!!!
     let scenes: ƒS.Scenes = [
-      { scene: firstAlessa, name: "Meeting Alessa" }
+      { scene: IXDPrototype, name: "Stella and Alessa seeing each other" }
     ];
 
     let uiElement: HTMLElement = document.querySelector("[type=interface]");
