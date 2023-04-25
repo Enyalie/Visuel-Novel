@@ -5,11 +5,13 @@ var Template;
         console.log("FudgeStory IXDScene starting");
         console.log("FudgeStory IXD Scene Stella starting");
         console.log("Prototype IXD startking");
-        await Template.ƒS.Location.show(Template.locations.citySteampunk);
+        await Template.ƒS.Location.show(Template.locations.Sandstrand);
         //await ƒS.Character.show(characters.narrator, ƒS.positionPercent(70, 100));
         await Template.ƒS.update(5);
-        await Template.ƒS.Character.show(Template.characters.stella, Template.characters.stella.pose.normal, Template.ƒS.positionPercent(0, 0));
+        await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.normal, Template.ƒS.positionPercent(50, 100));
         await Template.ƒS.update();
+        await Template.ƒS.Speech.tell(Template.characters.Ira, "come, lets dance");
+        await Template.ƒS.Character.hide(Template.characters.Ira);
         let IXDPrototype = {
             iPickleft: "left",
             iPickright: "right"
@@ -29,7 +31,7 @@ var Template;
                 await Template.ƒS.Character.hide(Template.characters.Ira);
                 break;
         }
-        await Template.ƒS.Speech.tell(Template.characters.stella, "Do you remember");
+        await Template.ƒS.Speech.tell(Template.characters.Ira, "Do you remember");
         let IXDPrototypeStep2 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
         switch (IXDPrototypeStep2) {
             case IXDPrototype.iPickleft:
@@ -45,7 +47,7 @@ var Template;
                 await Template.ƒS.Character.hide(Template.characters.Ira);
                 break;
         }
-        await Template.ƒS.Speech.tell(Template.characters.stella, "the time we danced");
+        await Template.ƒS.Speech.tell(Template.characters.Ira, "the time we danced");
         let IXDPrototypeStep3 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
         switch (IXDPrototypeStep3) {
             case IXDPrototype.iPickleft:
@@ -55,10 +57,12 @@ var Template;
                 await Template.ƒS.Character.hide(Template.characters.Ira);
                 break;
             case IXDPrototype.iPickright:
+                await Template.ƒS.update();
                 await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.right, Template.ƒS.positionPercent(70, 100));
+                await Template.ƒS.update();
                 break;
         }
-        await Template.ƒS.Speech.tell(Template.characters.stella, "beneath stars");
+        await Template.ƒS.Speech.tell(Template.characters.Ira, "beneath stars");
         let IXDPrototypeStep4 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
         switch (IXDPrototypeStep4) {
             case IXDPrototype.iPickleft:
@@ -68,10 +72,13 @@ var Template;
                 await Template.ƒS.Character.hide(Template.characters.Ira);
                 break;
             case IXDPrototype.iPickright:
+                await Template.ƒS.update();
                 await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.right, Template.ƒS.positionPercent(70, 100));
+                await Template.ƒS.update();
+                await Template.ƒS.Character.hide(Template.characters.Ira);
                 break;
         }
-        await Template.ƒS.Speech.tell(Template.characters.stella, "with nothing but");
+        await Template.ƒS.Speech.tell(Template.characters.Ira, "with nothing but");
         let IXDPrototypeStep5 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
         switch (IXDPrototypeStep5) {
             case IXDPrototype.iPickleft:
@@ -87,7 +94,8 @@ var Template;
                 await Template.ƒS.Character.hide(Template.characters.Ira);
                 break;
         }
-        await Template.ƒS.Speech.tell(Template.characters.stella, "the Music of howling winds");
+        await Template.ƒS.Speech.tell(Template.characters.Ira, "the Music of howling winds");
+        await Template.ƒS.Speech.tell(Template.characters.Ira, "End of Prototype");
     }
     Template.IXDPrototype = IXDPrototype;
 })(Template || (Template = {}));
@@ -165,6 +173,10 @@ var Template;
         citySteampunk: {
             name: "citySteampunk",
             background: "Images/Bckground/d810e64a496e7465e3c6312b65946c4b.jpg"
+        },
+        Sandstrand: {
+            name: "Strand",
+            background: "Images/Bckground/nightsky.jpg"
         }
     };
     Template.characters = {

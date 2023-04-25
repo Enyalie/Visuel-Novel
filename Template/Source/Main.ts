@@ -84,6 +84,11 @@ namespace Template {
       name: "citySteampunk",
       background: "Images/Bckground/d810e64a496e7465e3c6312b65946c4b.jpg"
 
+    },
+    Sandstrand: {
+      name: "Strand",
+
+      background: "Images/Bckground/nightsky.jpg"
     }
   };
 
