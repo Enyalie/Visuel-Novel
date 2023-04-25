@@ -63,6 +63,7 @@ namespace Template {
                 await ƒS.update();
                 await ƒS.Character.show(characters.Ira, characters.Ira.pose.right, ƒS.positionPercent(70,100));
                 await ƒS.update();
+                await ƒS.Character.hide(characters.Ira);
                 break;
         }
         await ƒS.Speech.tell(characters.Ira,"beneath stars");

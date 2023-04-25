@@ -60,6 +60,7 @@ var Template;
                 await Template.ƒS.update();
                 await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.right, Template.ƒS.positionPercent(70, 100));
                 await Template.ƒS.update();
+                await Template.ƒS.Character.hide(Template.characters.Ira);
                 break;
         }
         await Template.ƒS.Speech.tell(Template.characters.Ira, "beneath stars");
