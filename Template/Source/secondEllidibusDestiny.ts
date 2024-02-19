@@ -41,7 +41,7 @@ namespace Template {
       await ƒS.Speech.tell(characters.alessa, "kamst du denn viel rum?");
       await ƒS.Speech.tell(characters.elidibusButWithoutName, "Alessa was soll das.");
       await ƒS.Speech.tell(characters.alessa, "Was soll was");
-      await ƒS.Speech.tell(characters.elidibusButWithoutName, "Du weißt genau was ich meine, Sitzt dich einfach zu mir, fräst mich diese belangenlosen sachen.");
+      await ƒS.Speech.tell(characters.elidibusButWithoutName, "Du weißt genau was ich meine, Sitzt dich einfach zu mir, fragst mich diese belangenlosen sachen.");
       await ƒS.Speech.tell(characters.elidibusButWithoutName, "Götter was willst du? Geld, eine Eskorte? Wieso suchst du mich auf");
       await ƒS.Speech.tell(characters.alessa, "Was wenn ich einfach nur mit einem alten Freund reden will");
       await ƒS.Speech.tell(characters.elidibusButWithoutName, "So siehst du das also. Dann habe ich dir nichts zu sagen");
@@ -50,7 +50,7 @@ namespace Template {
       await ƒS.Speech.tell(characters.alessa, "Okay Elidibus bitte, lass uns reden");
       await ƒS.Speech.tell(characters.elidibus, "Wieso sollte ich, du hast deine Wahl doch getroffen und wie ich sehe fiel dir das nicht besonders schwer");
       await ƒS.Speech.tell(characters.elidibus, "lebwohl Alessa");
-      await ƒS.Speech.tell(characters.alessa, "Wie ich sehe immer noch das gleiche Kind"); 
+      await ƒS.Speech.tell(characters.alessa, "Immer noch das gleiche Kind"); 
       await ƒS.Speech.tell(characters.alessa, "Sag mal hörst du eigentlich immer noch diese Melodie, oder hat sie dich in deiner Gier nach Blut auch velassen");
       await ƒS.Speech.tell(characters.elidibus, "Wag es nicht so mit mir zu sprechen");
       await ƒS.Speech.tell(characters.alessa, "Oder was");
@@ -64,8 +64,8 @@ namespace Template {
       await ƒS.Speech.tell(characters.alessa, "Ich wüsste nicht was dich das angeht");
       await ƒS.Speech.tell(characters.elidibus, "Kannst du endlich mit diesen Spielchen aufhören");
       await ƒS.Speech.tell(characters.elidibus, "3 JAHRE");
-      await ƒS.Speech.tell(characters.elidibus, "3 Jahre lang hast du mich ignoriert und dein ebstes gegeben mir aus dem Weg zu gehen und mir nichts dir nichts");
-      await ƒS.Speech.tell(characters.elidibus, "Kommst du hier angetanzt und raubst mich jeden nerve den ich noch habe wegen einer Dummen Geschichte");
+      await ƒS.Speech.tell(characters.elidibus, "3 Jahre lang hast du mich ignoriert und dein ebstes gegeben mir aus dem Weg zu gehen und dir nichts mir nichts");
+      await ƒS.Speech.tell(characters.elidibus, "Kommst du hier angetanzt und raubst mich jeden nerve den ich noch habe, wegen einer Dummen Geschichte");
       await ƒS.Speech.tell(characters.elidibus, "Ich flehe dich an, bitte lass endlich das Stück was du von mir übrig gelassen hast in frieden. ");
       await ƒS.Speech.tell(characters.alessa, "dann beantworte mir endlich meine frage!");
       await ƒS.Speech.tell(characters.elidibus, "Wieso, was ist so wichtig daran");
@@ -76,7 +76,7 @@ namespace Template {
       await ƒS.Speech.tell(characters.elidibus, "Zufrieden?");
       await ƒS.Speech.tell(characters.alessa, "Erinnerst du dich an unser versprechen");
       await ƒS.Speech.tell(characters.elidibus, "Natürlich aber was hat das jetzt damit zu tun");
-      await ƒS.Speech.tell(characters.elidibus, "Götter Alessa komm zu deiner begiere");
+      await ƒS.Speech.tell(characters.elidibus, "Götter Alessa komm zu deiner begier");
       await ƒS.Speech.tell(characters.alessa, "Dann erzähl es mir");
       await ƒS.Speech.tell(characters.elidibus, "Alessa du hast deine Antwort lass mich nun endlich infrieden");
       await ƒS.Speech.tell(characters.alessa, "Elidibus, bitte");
@@ -90,6 +90,6 @@ namespace Template {
       await ƒS.Speech.tell(characters.elidibus, "Alessa sag mir nicht das");
       await ƒS.Speech.tell(characters.alessa, "Ich fand es Elidibus. Obwohl eigentlich");
       await ƒS.Speech.tell(characters.alessa, "fand Stella mich");
-      //In nem Buch müsste ich hier zu der nächsten Szene cutten weil Dramaturgie und so
+    
     }
   }

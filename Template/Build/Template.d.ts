@@ -1,7 +1,4 @@
 declare namespace Template {
-    function IXDPrototype(): ƒS.SceneReturn;
-}
-declare namespace Template {
     export import ƒ = FudgeCore;
     export import ƒS = FudgeStory;
     let transition: {
@@ -66,17 +63,12 @@ declare namespace Template {
                 normal: string;
             };
         };
-        Ira: {
-            name: string;
-            origin: ƒ.ORIGIN2D;
-            pose: {
-                normal: string;
-                right: string;
-            };
-        };
     };
     let dataForSave: {
         nameBarkeeper: string;
+        entscheidungEinsamerberg: boolean;
+        entscheidungMeer: boolean;
+        entscheidungKristalhöhle: boolean;
         variableKristalhöhle: boolean;
         variableRätselsceneAlessa1: boolean;
     };
@@ -85,13 +77,13 @@ declare namespace Template {
     function Scene(): ƒS.SceneReturn;
 }
 declare namespace Template {
+    function firstAlessa(): ƒS.SceneReturn;
+}
+declare namespace Template {
     function firstElidibus(): ƒS.SceneReturn;
 }
 declare namespace Template {
     function firstStella(): ƒS.SceneReturn;
-}
-declare namespace Template {
-    function firstAlessa(): ƒS.SceneReturn;
 }
 declare namespace Template {
     function fivedStella(): ƒS.SceneReturn;

@@ -113,7 +113,7 @@ namespace Template {
       name: "unbekannter Pestdoktor",
       origin: ƒS.ORIGIN.BOTTOMCENTER,
       pose: {
-        normal: ""
+        normal: "Images/Charakter/Alessa.PNG"
       }
     },
 
@@ -139,16 +139,9 @@ namespace Template {
       pose: {
         normal: ""
       }
-    },
-
-    Ira:{
-      name: "Ira",
-      origin: ƒS.ORIGIN.BOTTOMCENTER,
-      pose: {
-        normal: "Images/Charakter/DancingIraleft.PNG",
-        right: "Images/Charakter/DancingIraright.PNG"
-      }
     }
+
+   
   };
 
   
@@ -159,8 +152,12 @@ namespace Template {
   //*data will be safed (game progress)*//
   export let dataForSave = {
     nameBarkeeper: "",
+    entscheidungEinsamerberg: false,
+    entscheidungMeer: false,
+    entscheidungKristalhöhle: false,
     variableKristalhöhle: false,
-    variableRätselsceneAlessa1: false
+    variableRätselsceneAlessa1: false,
+    
 
   };
 
@@ -169,7 +166,20 @@ namespace Template {
     gameMenu = ƒS.Menu.create(ingameMenubuttosn, buttonFunctionalities, "gameMenuCSSClass");
     // ****SCENE HIERACHY!!!!!!!
     let scenes: ƒS.Scenes = [
-      { scene: IXDPrototype, name: "Stella and Alessa seeing each other" }
+      {scene: firstStella, name: "Das komische Mädchen" },
+      {scene: firstAlessa, name: "Die mit den Krähen kommt"},
+      
+
+      {id: "Einsamerberg", scene:secondStellaEinsamerberg, name:"Eine unerwartete reise", next: "Der unfreundliche Krieger"},
+      {id: "Meer", scene:secondStellaEinsamerberg, name:"Eine unerwartete reise", next: "Der unfreundliche Krieger"},
+      {id: "Kristalhöhle", scene:secondStellaEinsamerberg, name:"Eine unerwartete reise", next: "Der unfreundliche Krieger"},
+      {id: "Der unfreundliche Krieger", scene:firstElidibus, name: "Monsterjagd", next:"Der verlorene Mensch"},
+      {id: "Der verlorene Mensch", scene:thirdStella, name: "Nachklang", next:"Hinter der Maske"},
+      {id: "Hinter der Maske", scene:secondAlessa, name: "Eine Krähe unter Menschen"}
+
+
+
+
     ];
 
     let uiElement: HTMLElement = document.querySelector("[type=interface]");

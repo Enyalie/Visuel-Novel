@@ -3,14 +3,14 @@ namespace Template {
         console.log("FudgeStory Template Scene Alessa starting");
 
         console.log("first Scene Alessa starting");
-
+        await ƒS.Progress.delay(1);
         await ƒS.Location.show(locations.citySteampunk);
         //Play Bar Ambience
         //Play Open Door sound
         //Bar ambience == Mute
         //Play Footsteps
         await ƒS.update(5);
-        await ƒS.Character.show(characters.alessaButWithoutName, characters.alessaButWithoutName.pose.normal, ƒS.positionPercent(0, 0));
+        await ƒS.Character.show(characters.alessaButWithoutName, characters.alessaButWithoutName.pose.normal, ƒS.positionPercent(50, 100));
         await ƒS.update();
         await ƒS.Speech.tell(characters.narrator, "....");
         await ƒS.Speech.tell(characters.narrator, "....");
@@ -184,6 +184,20 @@ namespace Template {
         await ƒS.Speech.tell(dataForSave.nameBarkeeper, "wie war noch gleich ihr Name?", true, "spieler");
         await ƒS.Speech.tell(characters.alessaButWithoutName, "Nächstes mal");
         await ƒS.Speech.tell(characters.alessaButWithoutName, "....vielleicht");
+        ƒS.Speech.clear();
+        ƒS.Speech.hide();
+
+        await ƒS.update(1);
+        if (dataForSave.entscheidungEinsamerberg == true){
+            return "Einsamerberg";
+        }
+        if (dataForSave.entscheidungKristalhöhle == true){
+            return "Kristalhöhle";
+        }
+        if (dataForSave.entscheidungMeer == true){
+            return "Meer";
+        }
+
 
         //Allesa legt das Geld für den Whiksy auf den Tisch und geht
 

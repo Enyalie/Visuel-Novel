@@ -65,8 +65,9 @@ namespace Template {
         await ƒS.Speech.tell(characters.stella, "Der Rest ist als dank für den guten Tipp");
         break;
     }
-
-
+  
+  ƒS.Speech.clear();
+  ƒS.Speech.hide();
 
 
 

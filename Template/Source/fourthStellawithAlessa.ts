@@ -200,8 +200,8 @@ namespace Template {
             await ƒS.Speech.tell(characters.alessa, "Hat dieser zufällig Graues Haar?");
             await ƒS.Speech.tell(dataForSave.nameBarkeeper, "Wenn ich michr echt entsinne hatte er dies");
             await ƒS.Speech.tell(characters.alessa, "Wird dieser in näherer Zukunft erneut hier aufschlagen.");
-            await ƒS.Speech.tell(dataForSave.nameBarkeeper, "In ein paar wieso fragt ihr");
-            await ƒS.Speech.tell(characters.alessa, "Nur eines versprechesnwegen");
+            await ƒS.Speech.tell(dataForSave.nameBarkeeper, "In ein paar Tagen, wieso fragt ihr");
+            await ƒS.Speech.tell(characters.alessa, "Nur eines versprechens wegen");
             await ƒS.Speech.tell(characters.alessa, "Nun wirklich Gute Nacht");
             break;
 

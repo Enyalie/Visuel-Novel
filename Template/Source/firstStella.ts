@@ -7,7 +7,7 @@ namespace Template {
     await ƒS.Location.show(locations.citySteampunk);
     //await ƒS.Character.show(characters.narrator, ƒS.positionPercent(70, 100));
     await ƒS.update(5);
-    await ƒS.Character.show(characters.stella, characters.stella.pose.normal, ƒS.positionPercent(0, 0));
+    await ƒS.Character.show(characters.stella, characters.stella.pose.normal, ƒS.positionPercent(50, 100));
     await ƒS.update();
     await ƒS.Speech.tell(characters.stella, "Oh ihr Götter wie das duftet und sind das etwa frische Pilze aaaah och nein wie süß ein Kürbis und ist das etwa");
     //sound einspielen, hatten wir bisher noch nicht
@@ -65,7 +65,8 @@ namespace Template {
         await ƒS.Speech.tell(dataForSave.nameBarkeeper, "Also wenn sie wirklich Zwerge sehen wollen, dann, müssen sie nach Norden zu dem einsamen Berg reisen", true, "spieler");
         await ƒS.Speech.tell(characters.stella, "Der einsame Berg also….ich danke ihnen vielmals");
         //Satz langsam einpielen, dann verzögert und nach punkten schnell
-        await ƒS.Speech.tell(characters.narrator, "Stella springt wie ein Wirbelwind auf uns verlässt die Bar…..ohne zu ");
+        await ƒS.Speech.tell(characters.narrator, "Stella springt wie ein Wirbelwind auf uns verlässt die Bar…..ohne zu Bezahlen ");
+        dataForSave.entscheidungEinsamerberg = true;
         break;
 
       //Path Tequila Sunrise
@@ -94,6 +95,7 @@ namespace Template {
         await ƒS.Character.hide(characters.stella);
         await ƒS.Speech.tell(characters.narrator, "Stella steht auf, zwinkert dir noch einmal zu, wirft 1 Goldmünze auf den Tisch und macht sich Richtung anbrechende Dämmerung. ");
         //Item bekommen Goldmünze, mit Symbol aus einem Königreich das du nicht kennst
+        dataForSave.entscheidungMeer = true;
         break;
 
       //Path Drachenwhisky
@@ -126,22 +128,31 @@ namespace Template {
         await ƒS.Speech.tell(characters.stella, "HMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
         await ƒS.Speech.tell(dataForSave.nameBarkeeper, "waren sie den schon mal in einer Kristalhöhle?", true, "spieler");
         //Stella Pose Aufgeregt zeigen
-        await ƒS.update();
         await ƒS.Speech.tell(dataForSave.nameBarkeeper, "Dachte ich es mir doch, hier bitte nehmen sie als Entschuldigung diese Karte sie führt sie direkt dorthin", true, "spieler");
         await ƒS.Speech.tell(characters.stella, "Oh mein Gott, danke danke danke danke danke danke");
         await ƒS.Character.hide(characters.stella);
         await ƒS.Speech.tell(characters.narrator, "Stella steht wie ein Wirbelwind auf und rennt zur Tür ");
         //einspielen Schritte
-        await ƒS.Character.show(characters.stella, characters.stella.pose.normal, ƒS.positionPercent(0, 0));
+        await ƒS.update (2);
+        await ƒS.Character.show(characters.stella, characters.stella.pose.normal, ƒS.positionPercent(50, 100));
+        await ƒS.Speech.tell(characters.stella, "Ähm tut mir furchtbar leid, ich muss ja noch bezahlen.")
+        await ƒS.update();
         //Einspielen Geld suchen sound
         await ƒS.Speech.tell(dataForSave.nameBarkeeper, "Passt schon, kommen Sie einfach wieder", true, "spieler");
         await ƒS.Speech.tell(characters.stella, "Das werde ich");
         await ƒS.Character.hide(characters.stella);
         await ƒS.Speech.tell(characters.narrator, " Stella lächelt dir zu ehe Sie in die anbrechende Nacht hinaus rennt");
+         dataForSave.entscheidungKristalhöhle = true;
+        console.log(dataForSave.entscheidungKristalhöhle)
+        
         break;
 
     }
-
+  
+  ƒS.Speech.clear();
+  ƒS.Speech.hide();
+  
+    await ƒS.update(1);
 
   }
 }

@@ -1,107 +1,6 @@
 "use strict";
 var Template;
 (function (Template) {
-    async function IXDPrototype() {
-        console.log("FudgeStory IXDScene starting");
-        console.log("FudgeStory IXD Scene Stella starting");
-        console.log("Prototype IXD startking");
-        await Template.ƒS.Location.show(Template.locations.Sandstrand);
-        //await ƒS.Character.show(characters.narrator, ƒS.positionPercent(70, 100));
-        await Template.ƒS.update(5);
-        await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.normal, Template.ƒS.positionPercent(50, 100));
-        await Template.ƒS.update();
-        await Template.ƒS.Speech.tell(Template.characters.Ira, "come, lets dance");
-        await Template.ƒS.Character.hide(Template.characters.Ira);
-        let IXDPrototype = {
-            iPickleft: "left",
-            iPickright: "right"
-        };
-        let IXDPrototypeStep1 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
-        switch (IXDPrototypeStep1) {
-            case IXDPrototype.iPickleft:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.normal, Template.ƒS.positionPercent(30, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-            case IXDPrototype.iPickright:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.right, Template.ƒS.positionPercent(70, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-        }
-        await Template.ƒS.Speech.tell(Template.characters.Ira, "Do you remember");
-        let IXDPrototypeStep2 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
-        switch (IXDPrototypeStep2) {
-            case IXDPrototype.iPickleft:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.normal, Template.ƒS.positionPercent(30, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-            case IXDPrototype.iPickright:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.right, Template.ƒS.positionPercent(70, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-        }
-        await Template.ƒS.Speech.tell(Template.characters.Ira, "the time we danced");
-        let IXDPrototypeStep3 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
-        switch (IXDPrototypeStep3) {
-            case IXDPrototype.iPickleft:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.normal, Template.ƒS.positionPercent(30, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-            case IXDPrototype.iPickright:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.right, Template.ƒS.positionPercent(70, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-        }
-        await Template.ƒS.Speech.tell(Template.characters.Ira, "beneath stars");
-        let IXDPrototypeStep4 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
-        switch (IXDPrototypeStep4) {
-            case IXDPrototype.iPickleft:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.normal, Template.ƒS.positionPercent(30, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-            case IXDPrototype.iPickright:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.right, Template.ƒS.positionPercent(70, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-        }
-        await Template.ƒS.Speech.tell(Template.characters.Ira, "with nothing but");
-        let IXDPrototypeStep5 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
-        switch (IXDPrototypeStep5) {
-            case IXDPrototype.iPickleft:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.normal, Template.ƒS.positionPercent(30, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-            case IXDPrototype.iPickright:
-                await Template.ƒS.update();
-                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.right, Template.ƒS.positionPercent(70, 100));
-                await Template.ƒS.update();
-                await Template.ƒS.Character.hide(Template.characters.Ira);
-                break;
-        }
-        await Template.ƒS.Speech.tell(Template.characters.Ira, "the Music of howling winds");
-        await Template.ƒS.Speech.tell(Template.characters.Ira, "End of Prototype");
-    }
-    Template.IXDPrototype = IXDPrototype;
-})(Template || (Template = {}));
-var Template;
-(function (Template) {
     Template.ƒ = FudgeCore;
     Template.ƒS = FudgeStory;
     console.log("FudgeStory template starting");
@@ -198,7 +97,7 @@ var Template;
             name: "unbekannter Pestdoktor",
             origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
-                normal: ""
+                normal: "Images/Charakter/Alessa.PNG"
             }
         },
         alessa: {
@@ -221,28 +120,30 @@ var Template;
             pose: {
                 normal: ""
             }
-        },
-        Ira: {
-            name: "Ira",
-            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
-            pose: {
-                normal: "Images/Charakter/DancingIraleft.PNG",
-                right: "Images/Charakter/DancingIraright.PNG"
-            }
         }
     };
     //*data will be safed (game progress)*//
     Template.dataForSave = {
         nameBarkeeper: "",
+        entscheidungEinsamerberg: false,
+        entscheidungMeer: false,
+        entscheidungKristalhöhle: false,
         variableKristalhöhle: false,
-        variableRätselsceneAlessa1: false
+        variableRätselsceneAlessa1: false,
     };
     window.addEventListener("load", start);
     function start(_event) {
         gameMenu = Template.ƒS.Menu.create(ingameMenubuttosn, buttonFunctionalities, "gameMenuCSSClass");
         // ****SCENE HIERACHY!!!!!!!
         let scenes = [
-            { scene: Template.IXDPrototype, name: "Stella and Alessa seeing each other" }
+            { scene: Template.firstStella, name: "Das komische Mädchen" },
+            { scene: Template.firstAlessa, name: "Die mit den Krähen kommt" },
+            { id: "Einsamerberg", scene: Template.secondStellaEinsamerberg, name: "Eine unerwartete reise", next: "Der unfreundliche Krieger" },
+            { id: "Meer", scene: Template.secondStellaEinsamerberg, name: "Eine unerwartete reise", next: "Der unfreundliche Krieger" },
+            { id: "Kristalhöhle", scene: Template.secondStellaEinsamerberg, name: "Eine unerwartete reise", next: "Der unfreundliche Krieger" },
+            { id: "Der unfreundliche Krieger", scene: Template.firstElidibus, name: "Monsterjagd", next: "Der verlorene Mensch" },
+            { id: "Der verlorene Mensch", scene: Template.thirdStella, name: "Nachklang", next: "Hinter der Maske" },
+            { id: "Hinter der Maske", scene: Template.secondAlessa, name: "Eine Krähe unter Menschen" }
         ];
         let uiElement = document.querySelector("[type=interface]");
         Template.dataForSave = Template.ƒS.Progress.setData(Template.dataForSave, uiElement);
@@ -266,197 +167,17 @@ var Template;
 })(Template || (Template = {}));
 var Template;
 (function (Template) {
-    async function firstElidibus() {
-        console.log("FudgeStory Template Scene Elidibus starting");
-        console.log("first Scene Elidibus starting");
-        await Template.ƒS.Location.show(Template.locations.citySteampunk);
-        //await ƒS.Character.show(characters.narrator, ƒS.positionPercent(70, 100));
-        //Play Bar ambience
-        await Template.ƒS.Speech.tell(Template.characters.narrator, "Ein Mann betritt die Bar und läut Zielstrebig zur Theke, hinter ihm bildet sich eine Spur aus schwarzen Blut");
-        await Template.ƒS.update(3);
-        await Template.ƒS.Character.show(Template.characters.elidibusButWithoutName, Template.characters.elidibusButWithoutName.pose.normal, Template.ƒS.positionPercent(0, 0));
-        await Template.ƒS.update();
-        //show Monster Kopf + Einspielen aufklatschen Sound
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Zieh ein Becher von der Belohnung ab");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Oh natürlich natürlich, dennoch ich muss zugeben, wart ihr nicht erst vor ein paar Stunden hier?", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Es wäre schneller gegangen, wären die Angaben präziser gewesen.");
-        await Template.ƒS.Speech.tell(Template.characters.narrator, "Der Mann vor dir ext das Bier, das du ihm hingestellt hast binnen sekunde");
-        // trink geräusche einfügen
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Also was ist der nächste Auftrag!");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Immer mit der ruhe, ihr seid doch grade erst angekommen", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "und");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "wollt ihr euch nicht erst einmal ausruhen? Die Nacht bricht sowieso heran", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Ich versichere dir Bartender. Ich muss mich nicht ausruhen.");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "ähem" + Template.dataForSave.nameBarkeeper, true, "spieler");
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "euer Name nähme ich an. Gut" + Template.dataForSave.nameBarkeeper);
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Jetzt nennet mir den nächsten Auftrag!");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Was bitte treibt euch zu diesem Dunkeln stunde so versessen auf die Jagd?", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Was Interessiert es euch. Ich entledige mich eures Problems und ihr Bezahlt mich.");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich bin ein Barkeeper, Informationen sind mein Geschäft und genau diese verlangt ihr ja immerhin grade von mir", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "also Jäger, was treibt euch zu dieser stunde so versessen auf die Jagd", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Gold.... und jetzt den Auftrag");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "God also", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun gut Jäger, da ihr so veressen auf Gold seid, was haltet ihr von einem Werwolf?");
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Was ich davon halte?");
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "eine vielversprechende Jagd würde ich sagen");
-        //Show Elidibus weggedreht
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Wir sehen uns in 2 Wochen");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ach eines noch Jäger", true, "Spieler");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nächstes mal, sagt mir doch bitte den wahren grund");
-        //Speeker Elidibus tzz einspielen
-        await Template.ƒS.Speech.tell(Template.characters.narrator, "Der Jäger geht hinaus in die Nacht");
-    }
-    Template.firstElidibus = firstElidibus;
-})(Template || (Template = {}));
-var Template;
-(function (Template) {
-    async function firstStella() {
-        console.log("FudgeStory Template Scene Stella starting");
-        console.log("first Scene Stella starting");
-        await Template.ƒS.Location.show(Template.locations.citySteampunk);
-        //await ƒS.Character.show(characters.narrator, ƒS.positionPercent(70, 100));
-        await Template.ƒS.update(5);
-        await Template.ƒS.Character.show(Template.characters.stella, Template.characters.stella.pose.normal, Template.ƒS.positionPercent(0, 0));
-        await Template.ƒS.update();
-        await Template.ƒS.Speech.tell(Template.characters.stella, "Oh ihr Götter wie das duftet und sind das etwa frische Pilze aaaah och nein wie süß ein Kürbis und ist das etwa");
-        //sound einspielen, hatten wir bisher noch nicht
-        await Template.ƒS.Speech.tell(Template.characters.stella, "Oh tut mir leid, ähm, ich-ich räume das sofort wieder auf.");
-        await Template.ƒS.Speech.tell(Template.characters.barkeeper, "Machen Sie sich keine Sorgen junge Frau, das passiert schon mal");
-        await Template.ƒS.Speech.tell(Template.characters.stella, "Ähm, es tut mir dennoch unfassbar leid. Stella übrigens. Und du bist?");
-        //Pose pease einspielen und wieder zurück zu Pose normal
-        Template.dataForSave.nameBarkeeper = await Template.ƒS.Speech.getInput();
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Sehr erfreut,Ich bin" + " " + Template.dataForSave.nameBarkeeper + "" + "der Barkeeper  dieses kleinen Ambientes", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Also Stella, sagen sie mir, darf ich ihnen etwas zum trinken anbieten?", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.characters.stella, "„Hmmmmmmm, trinken hmmm, sie haben so viel auf ihrer Karte, was soll ich nur. Okay Okay wie wärs. ");
-        await Template.ƒS.Speech.tell(Template.characters.stella, "Aaaaaaah ich habs");
-        await Template.ƒS.Speech.tell(Template.characters.stella, "Überraschen sie mich");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun aber langsam, ich kenne sie doch kaum, wie soll ich ihnen da etwas Empfehlen.", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Dennoch Sie sind bestimmt durstig, also sollte mir einen Hinweis reichen.", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Sagen sie mir bitte ihre Lieblingsblume", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.characters.stella, "Öhm meine lieblingsblume hmmmm. Ich denke die Kirschblüte");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Die Schönheits des Lebens in seiner Zerbrechlichkeit also", true, "spieler");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "In diesem fall, ja genau würde ich ihnen folgendes Empfehlen.", true, "spieler");
-        //await  ƒS.Speech.setTickerDelays(_letter20,characters.stella, "hey hey hey hey");
-        let drinkempfehlung = {
-            iPickBier: "Bier",
-            iPickTequilaSunrise: "TequilaSunrise",
-            iPickDrachenwhiksy: "Drachenwhisky"
-        };
-        let dialogueElement = await Template.ƒS.Menu.getInput(drinkempfehlung, "choicesCSSClass");
-        switch (dialogueElement) {
-            //Path Bier
-            case drinkempfehlung.iPickBier:
-                console.log("Case Bier ab jetzt abspielen.");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich denke für sie, ja genau einmal ein Zwergenfeuer unser Haus Bier. ", true, "spieler");
-                //Stella Fragezeichen über dem Kopf anzeigen lassen
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "ist etwas nicht Inordnung miss?", true, "spieler");
-                //Stella erschrocken anzeigen
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Ähm doch doch sorry, es ist nur. Was ist das?");
-                //Einbledung Bierflasche mit Zwergenbild
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Meinen Sie etwa den Zwerg?", true, "spieler");
-                Template.ƒS.Speech.setTickerDelays(200);
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Z-w-e-r-g");
-                Template.ƒS.Speech.setTickerDelays(20);
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "In Gedanken:Ist es wirklich möglich bisher noch nie etwas von Zwergen gehört zu haben? ", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun ja, ähm wie beschreibe ich Ihnen das am besten", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Zwerge sind Meister der Schmiede, es gibt kein Feuer das für sie zu heiß  und keinen Stein der für sie zu hart ist.", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ebenfalls legen sie viel Wert auf ihre Bärte. Das Beeindruckendste an ihnen ist, aber vor allem ihre Feier Kunst. ", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Riesenfeste mit Maßen an Bier und Fleisch. Grade ihr Pökel Fleisch ist legendär.", true, "spieler");
-                //Sprachausgabe anpassen, sehr schnell bei Stella gleich
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Oooh das klingt ja wundervoll, wo kann ich solche Zwerge antreffen und dieses Bakel Fleisch probieren.");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Ich muss sie einfach sehen, jetzt wo sie mir so viel von ihnen Erzählt haben, bitte ");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "bitte, bitte, bitte, bitte bitte bitte Sie müssen mir sagen wo ich sie finde.");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Also wenn sie wirklich Zwerge sehen wollen, dann, müssen sie nach Norden zu dem einsamen Berg reisen", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Der einsame Berg also….ich danke ihnen vielmals");
-                //Satz langsam einpielen, dann verzögert und nach punkten schnell
-                await Template.ƒS.Speech.tell(Template.characters.narrator, "Stella springt wie ein Wirbelwind auf uns verlässt die Bar…..ohne zu ");
-                break;
-            //Path Tequila Sunrise
-            case drinkempfehlung.iPickTequilaSunrise:
-                console.log("Path Tequila Sunrise ab jetzt abspielen");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "In dem fall, denke ich bestimmt das ich sie damit begeistern kann", true, "spieler");
-                //Bild Tequila Sunrise einspielen
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Uuuuuh schmeckt das süß und diese Farbe, wie ein Sonnenuntergang");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "eigentlich soll es einen Sonnenaufgang Symbolisieren", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Wissen Sie. Jedes Mal, wenn ich diesen Cocktail mache, denke ich an meinen letzten Strandurlaub zurück und erinnere mich ", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "an das Lila und Organe, das langsam die letzten Schatten der Nacht am Horizont durchbricht.", true, "spieler");
-                //Lachen Einspielen, Goldroger maybe
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Es tut mir furchtbar leid, ich muss sie bestimmt langweilen.", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Nein überhaupt nicht, bitte erzählen Sie mir mehr");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "So viel mehr gibt es gar nicht, das alles ist schon eine Weile her, damals war ich selbst noch Abenteuer und bereiste die Welt", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Wieso tuen sie es jetzt nicht mehr? Was hält sie davon ab");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ach weißt du, da war ein Kampf und ein Pfeil und seit dem, hach ja jeder wird Irgendwann mal sesshaft", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Ich nicht niemals! Wie könnte ich auch, es gibt soviel unglaubliches zu sehen gibt. ");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Diese Welt ist so voller Wunder, wie könnte ich da jemals nicht alles davon sehen und erleben wollen");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Imerhin ist dieses Leben doch so kurz, wie soll ich da jemans aufhören zu suchen");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich denke das ist keine Entscheidung die man bewusst trifft", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich denke für jeden von uns ko-", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Das Meer also");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Wie bitte", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Das Meer, das wird mein nächstes Ziel sein. Ich danke ihnen, bis in ein paar Wochen");
-                await Template.ƒS.Character.hide(Template.characters.stella);
-                await Template.ƒS.Speech.tell(Template.characters.narrator, "Stella steht auf, zwinkert dir noch einmal zu, wirft 1 Goldmünze auf den Tisch und macht sich Richtung anbrechende Dämmerung. ");
-                //Item bekommen Goldmünze, mit Symbol aus einem Königreich das du nicht kennst
-                break;
-            //Path Drachenwhisky
-            case drinkempfehlung.iPickDrachenwhiksy:
-                console.log("Path Drachenwhisky ab jetzt abspielen");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Sie sehen mir aus, als könnten sie was vertragen.");
-                //schluckgeräusch
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Götter WAS IST DAS");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Selbstgebrannter Drachenwhisky, nur das Beste für unsere Kundschaft", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "sagen sie mir nicht, Leute trinken sowas freiwillig, das brennt ja wie Drachen Feuer…..");
-                await Template.ƒS.Speech.tell(Template.characters.stella, ".... ........ .....  ...... daher also der Name");
-                await Template.ƒS.Speech.tell(Template.characters.narrator, "...");
-                await Template.ƒS.Speech.tell(Template.characters.narrator, "...");
-                await Template.ƒS.Speech.tell(Template.characters.narrator, "...");
-                await Template.ƒS.Speech.tell(Template.characters.narrator, "...");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun Stella war es richtig, was treibt sie in unsere Stadt?", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Öhm nicht viel, ich bin einfach nur auf der Durchreise und wolle mir einen Trink nehmen, eigentlich war die Idee dabei nicht vergiftet zu werden");
-                //Lachen Einspielen Barkeeper
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich bitte vielmals um Entschuldigung, es ist nicht immer leicht den Geschmack meiner Kundschaft vorauszusagen. ", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nächstes Mal enttäusche ich sie nicht, ganz sicher", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Nächstes Mal also, sie sind aber zuversichtlich, dass ich wieder herkomme");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nur so ein Gefühl", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Also Stella, auf der Durchreise, wo soll es denn hingehen?", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Wenn ich das nur wüsste");
-                //Säufzer Einspielen
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Diese Welt ist so groß, wie soll man da überhaupt wissen, wohin man gehen soll.");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Also falls sie mir diese Chance erlauben, könnte ich ihnen einen Vorschlag machen", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Hmmmmmmm");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Keine sorge ich kam selbst viel herum, ich kenne da ein paar schöne Orte", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "HMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "waren sie den schon mal in einer Kristalhöhle?", true, "spieler");
-                //Stella Pose Aufgeregt zeigen
-                await Template.ƒS.update();
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Dachte ich es mir doch, hier bitte nehmen sie als Entschuldigung diese Karte sie führt sie direkt dorthin", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Oh mein Gott, danke danke danke danke danke danke");
-                await Template.ƒS.Character.hide(Template.characters.stella);
-                await Template.ƒS.Speech.tell(Template.characters.narrator, "Stella steht wie ein Wirbelwind auf und rennt zur Tür ");
-                //einspielen Schritte
-                await Template.ƒS.Character.show(Template.characters.stella, Template.characters.stella.pose.normal, Template.ƒS.positionPercent(0, 0));
-                //Einspielen Geld suchen sound
-                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Passt schon, kommen Sie einfach wieder", true, "spieler");
-                await Template.ƒS.Speech.tell(Template.characters.stella, "Das werde ich");
-                await Template.ƒS.Character.hide(Template.characters.stella);
-                await Template.ƒS.Speech.tell(Template.characters.narrator, " Stella lächelt dir zu ehe Sie in die anbrechende Nacht hinaus rennt");
-                break;
-        }
-    }
-    Template.firstStella = firstStella;
-})(Template || (Template = {}));
-var Template;
-(function (Template) {
     async function firstAlessa() {
         console.log("FudgeStory Template Scene Alessa starting");
         console.log("first Scene Alessa starting");
+        await Template.ƒS.Progress.delay(1);
         await Template.ƒS.Location.show(Template.locations.citySteampunk);
         //Play Bar Ambience
         //Play Open Door sound
         //Bar ambience == Mute
         //Play Footsteps
         await Template.ƒS.update(5);
-        await Template.ƒS.Character.show(Template.characters.alessaButWithoutName, Template.characters.alessaButWithoutName.pose.normal, Template.ƒS.positionPercent(0, 0));
+        await Template.ƒS.Character.show(Template.characters.alessaButWithoutName, Template.characters.alessaButWithoutName.pose.normal, Template.ƒS.positionPercent(50, 100));
         await Template.ƒS.update();
         await Template.ƒS.Speech.tell(Template.characters.narrator, "....");
         await Template.ƒS.Speech.tell(Template.characters.narrator, "....");
@@ -604,9 +325,210 @@ var Template;
         await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "wie war noch gleich ihr Name?", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.alessaButWithoutName, "Nächstes mal");
         await Template.ƒS.Speech.tell(Template.characters.alessaButWithoutName, "....vielleicht");
+        Template.ƒS.Speech.clear();
+        Template.ƒS.Speech.hide();
+        await Template.ƒS.update(1);
+        if (Template.dataForSave.entscheidungEinsamerberg == true) {
+            return "Einsamerberg";
+        }
+        if (Template.dataForSave.entscheidungKristalhöhle == true) {
+            return "Kristalhöhle";
+        }
+        if (Template.dataForSave.entscheidungMeer == true) {
+            return "Meer";
+        }
         //Allesa legt das Geld für den Whiksy auf den Tisch und geht
     }
     Template.firstAlessa = firstAlessa;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
+    async function firstElidibus() {
+        console.log("FudgeStory Template Scene Elidibus starting");
+        console.log("first Scene Elidibus starting");
+        await Template.ƒS.Location.show(Template.locations.citySteampunk);
+        //await ƒS.Character.show(characters.narrator, ƒS.positionPercent(70, 100));
+        //Play Bar ambience
+        await Template.ƒS.Speech.tell(Template.characters.narrator, "Ein Mann betritt die Bar und läut Zielstrebig zur Theke, hinter ihm bildet sich eine Spur aus schwarzen Blut");
+        await Template.ƒS.update(3);
+        await Template.ƒS.Character.show(Template.characters.elidibusButWithoutName, Template.characters.elidibusButWithoutName.pose.normal, Template.ƒS.positionPercent(0, 0));
+        await Template.ƒS.update();
+        //show Monster Kopf + Einspielen aufklatschen Sound
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Zieh ein Becher von der Belohnung ab");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Oh natürlich natürlich, dennoch ich muss zugeben, wart ihr nicht erst vor ein paar Stunden hier?", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Es wäre schneller gegangen, wären die Angaben präziser gewesen.");
+        await Template.ƒS.Speech.tell(Template.characters.narrator, "Der Mann vor dir ext das Bier, das du ihm hingestellt hast binnen sekunde");
+        // trink geräusche einfügen
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Also was ist der nächste Auftrag!");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Immer mit der ruhe, ihr seid doch grade erst angekommen", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "und");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "wollt ihr euch nicht erst einmal ausruhen? Die Nacht bricht sowieso heran", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Ich versichere dir Bartender. Ich muss mich nicht ausruhen.");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "ähem" + Template.dataForSave.nameBarkeeper, true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "euer Name nähme ich an. Gut" + Template.dataForSave.nameBarkeeper);
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Jetzt nennet mir den nächsten Auftrag!");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Was bitte treibt euch zu diesem Dunkeln stunde so versessen auf die Jagd?", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Was Interessiert es euch. Ich entledige mich eures Problems und ihr Bezahlt mich.");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich bin ein Barkeeper, Informationen sind mein Geschäft und genau diese verlangt ihr ja immerhin grade von mir", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "also Jäger, was treibt euch zu dieser stunde so versessen auf die Jagd", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Gold.... und jetzt den Auftrag");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "God also", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun gut Jäger, da ihr so veressen auf Gold seid, was haltet ihr von einem Werwolf?");
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Was ich davon halte?");
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "eine vielversprechende Jagd würde ich sagen");
+        //Show Elidibus weggedreht
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Wir sehen uns in 2 Wochen");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ach eines noch Jäger", true, "Spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nächstes mal, sagt mir doch bitte den wahren grund");
+        await Template.ƒS.Speech.tell(Template.characters.narrator, "Der Jäger geht hinaus in die Nacht");
+    }
+    Template.firstElidibus = firstElidibus;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
+    async function firstStella() {
+        console.log("FudgeStory Template Scene Stella starting");
+        console.log("first Scene Stella starting");
+        await Template.ƒS.Location.show(Template.locations.citySteampunk);
+        //await ƒS.Character.show(characters.narrator, ƒS.positionPercent(70, 100));
+        await Template.ƒS.update(5);
+        await Template.ƒS.Character.show(Template.characters.stella, Template.characters.stella.pose.normal, Template.ƒS.positionPercent(50, 100));
+        await Template.ƒS.update();
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Oh ihr Götter wie das duftet und sind das etwa frische Pilze aaaah och nein wie süß ein Kürbis und ist das etwa");
+        //sound einspielen, hatten wir bisher noch nicht
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Oh tut mir leid, ähm, ich-ich räume das sofort wieder auf.");
+        await Template.ƒS.Speech.tell(Template.characters.barkeeper, "Machen Sie sich keine Sorgen junge Frau, das passiert schon mal");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Ähm, es tut mir dennoch unfassbar leid. Stella übrigens. Und du bist?");
+        //Pose pease einspielen und wieder zurück zu Pose normal
+        Template.dataForSave.nameBarkeeper = await Template.ƒS.Speech.getInput();
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Sehr erfreut,Ich bin" + " " + Template.dataForSave.nameBarkeeper + "" + "der Barkeeper  dieses kleinen Ambientes", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Also Stella, sagen sie mir, darf ich ihnen etwas zum trinken anbieten?", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "„Hmmmmmmm, trinken hmmm, sie haben so viel auf ihrer Karte, was soll ich nur. Okay Okay wie wärs. ");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Aaaaaaah ich habs");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Überraschen sie mich");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun aber langsam, ich kenne sie doch kaum, wie soll ich ihnen da etwas Empfehlen.", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Dennoch Sie sind bestimmt durstig, also sollte mir einen Hinweis reichen.", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Sagen sie mir bitte ihre Lieblingsblume", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Öhm meine lieblingsblume hmmmm. Ich denke die Kirschblüte");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Die Schönheits des Lebens in seiner Zerbrechlichkeit also", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "In diesem fall, ja genau würde ich ihnen folgendes Empfehlen.", true, "spieler");
+        //await  ƒS.Speech.setTickerDelays(_letter20,characters.stella, "hey hey hey hey");
+        let drinkempfehlung = {
+            iPickBier: "Bier",
+            iPickTequilaSunrise: "TequilaSunrise",
+            iPickDrachenwhiksy: "Drachenwhisky"
+        };
+        let dialogueElement = await Template.ƒS.Menu.getInput(drinkempfehlung, "choicesCSSClass");
+        switch (dialogueElement) {
+            //Path Bier
+            case drinkempfehlung.iPickBier:
+                console.log("Case Bier ab jetzt abspielen.");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich denke für sie, ja genau einmal ein Zwergenfeuer unser Haus Bier. ", true, "spieler");
+                //Stella Fragezeichen über dem Kopf anzeigen lassen
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "ist etwas nicht Inordnung miss?", true, "spieler");
+                //Stella erschrocken anzeigen
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Ähm doch doch sorry, es ist nur. Was ist das?");
+                //Einbledung Bierflasche mit Zwergenbild
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Meinen Sie etwa den Zwerg?", true, "spieler");
+                Template.ƒS.Speech.setTickerDelays(200);
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Z-w-e-r-g");
+                Template.ƒS.Speech.setTickerDelays(20);
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "In Gedanken:Ist es wirklich möglich bisher noch nie etwas von Zwergen gehört zu haben? ", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun ja, ähm wie beschreibe ich Ihnen das am besten", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Zwerge sind Meister der Schmiede, es gibt kein Feuer das für sie zu heiß  und keinen Stein der für sie zu hart ist.", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ebenfalls legen sie viel Wert auf ihre Bärte. Das Beeindruckendste an ihnen ist, aber vor allem ihre Feier Kunst. ", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Riesenfeste mit Maßen an Bier und Fleisch. Grade ihr Pökel Fleisch ist legendär.", true, "spieler");
+                //Sprachausgabe anpassen, sehr schnell bei Stella gleich
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Oooh das klingt ja wundervoll, wo kann ich solche Zwerge antreffen und dieses Bakel Fleisch probieren.");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Ich muss sie einfach sehen, jetzt wo sie mir so viel von ihnen Erzählt haben, bitte ");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "bitte, bitte, bitte, bitte bitte bitte Sie müssen mir sagen wo ich sie finde.");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Also wenn sie wirklich Zwerge sehen wollen, dann, müssen sie nach Norden zu dem einsamen Berg reisen", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Der einsame Berg also….ich danke ihnen vielmals");
+                //Satz langsam einpielen, dann verzögert und nach punkten schnell
+                await Template.ƒS.Speech.tell(Template.characters.narrator, "Stella springt wie ein Wirbelwind auf uns verlässt die Bar…..ohne zu Bezahlen ");
+                Template.dataForSave.entscheidungEinsamerberg = true;
+                break;
+            //Path Tequila Sunrise
+            case drinkempfehlung.iPickTequilaSunrise:
+                console.log("Path Tequila Sunrise ab jetzt abspielen");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "In dem fall, denke ich bestimmt das ich sie damit begeistern kann", true, "spieler");
+                //Bild Tequila Sunrise einspielen
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Uuuuuh schmeckt das süß und diese Farbe, wie ein Sonnenuntergang");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "eigentlich soll es einen Sonnenaufgang Symbolisieren", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Wissen Sie. Jedes Mal, wenn ich diesen Cocktail mache, denke ich an meinen letzten Strandurlaub zurück und erinnere mich ", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "an das Lila und Organe, das langsam die letzten Schatten der Nacht am Horizont durchbricht.", true, "spieler");
+                //Lachen Einspielen, Goldroger maybe
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Es tut mir furchtbar leid, ich muss sie bestimmt langweilen.", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Nein überhaupt nicht, bitte erzählen Sie mir mehr");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "So viel mehr gibt es gar nicht, das alles ist schon eine Weile her, damals war ich selbst noch Abenteuer und bereiste die Welt", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Wieso tuen sie es jetzt nicht mehr? Was hält sie davon ab");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ach weißt du, da war ein Kampf und ein Pfeil und seit dem, hach ja jeder wird Irgendwann mal sesshaft", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Ich nicht niemals! Wie könnte ich auch, es gibt soviel unglaubliches zu sehen gibt. ");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Diese Welt ist so voller Wunder, wie könnte ich da jemals nicht alles davon sehen und erleben wollen");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Imerhin ist dieses Leben doch so kurz, wie soll ich da jemans aufhören zu suchen");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich denke das ist keine Entscheidung die man bewusst trifft", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich denke für jeden von uns ko-", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Das Meer also");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Wie bitte", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Das Meer, das wird mein nächstes Ziel sein. Ich danke ihnen, bis in ein paar Wochen");
+                await Template.ƒS.Character.hide(Template.characters.stella);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, "Stella steht auf, zwinkert dir noch einmal zu, wirft 1 Goldmünze auf den Tisch und macht sich Richtung anbrechende Dämmerung. ");
+                //Item bekommen Goldmünze, mit Symbol aus einem Königreich das du nicht kennst
+                Template.dataForSave.entscheidungMeer = true;
+                break;
+            //Path Drachenwhisky
+            case drinkempfehlung.iPickDrachenwhiksy:
+                console.log("Path Drachenwhisky ab jetzt abspielen");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Sie sehen mir aus, als könnten sie was vertragen.");
+                //schluckgeräusch
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Götter WAS IST DAS");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Selbstgebrannter Drachenwhisky, nur das Beste für unsere Kundschaft", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "sagen sie mir nicht, Leute trinken sowas freiwillig, das brennt ja wie Drachen Feuer…..");
+                await Template.ƒS.Speech.tell(Template.characters.stella, ".... ........ .....  ...... daher also der Name");
+                await Template.ƒS.Speech.tell(Template.characters.narrator, "...");
+                await Template.ƒS.Speech.tell(Template.characters.narrator, "...");
+                await Template.ƒS.Speech.tell(Template.characters.narrator, "...");
+                await Template.ƒS.Speech.tell(Template.characters.narrator, "...");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun Stella war es richtig, was treibt sie in unsere Stadt?", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Öhm nicht viel, ich bin einfach nur auf der Durchreise und wolle mir einen Trink nehmen, eigentlich war die Idee dabei nicht vergiftet zu werden");
+                //Lachen Einspielen Barkeeper
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich bitte vielmals um Entschuldigung, es ist nicht immer leicht den Geschmack meiner Kundschaft vorauszusagen. ", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nächstes Mal enttäusche ich sie nicht, ganz sicher", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Nächstes Mal also, sie sind aber zuversichtlich, dass ich wieder herkomme");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nur so ein Gefühl", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Also Stella, auf der Durchreise, wo soll es denn hingehen?", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Wenn ich das nur wüsste");
+                //Säufzer Einspielen
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Diese Welt ist so groß, wie soll man da überhaupt wissen, wohin man gehen soll.");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Also falls sie mir diese Chance erlauben, könnte ich ihnen einen Vorschlag machen", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Hmmmmmmm");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Keine sorge ich kam selbst viel herum, ich kenne da ein paar schöne Orte", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "HMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "waren sie den schon mal in einer Kristalhöhle?", true, "spieler");
+                //Stella Pose Aufgeregt zeigen
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Dachte ich es mir doch, hier bitte nehmen sie als Entschuldigung diese Karte sie führt sie direkt dorthin", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Oh mein Gott, danke danke danke danke danke danke");
+                await Template.ƒS.Character.hide(Template.characters.stella);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, "Stella steht wie ein Wirbelwind auf und rennt zur Tür ");
+                //einspielen Schritte
+                await Template.ƒS.update(2);
+                await Template.ƒS.Character.show(Template.characters.stella, Template.characters.stella.pose.normal, Template.ƒS.positionPercent(50, 100));
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Ähm tut mir furchtbar leid, ich muss ja noch bezahlen.");
+                await Template.ƒS.update();
+                //Einspielen Geld suchen sound
+                await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Passt schon, kommen Sie einfach wieder", true, "spieler");
+                await Template.ƒS.Speech.tell(Template.characters.stella, "Das werde ich");
+                await Template.ƒS.Character.hide(Template.characters.stella);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, " Stella lächelt dir zu ehe Sie in die anbrechende Nacht hinaus rennt");
+                Template.dataForSave.entscheidungKristalhöhle = true;
+                console.log(Template.dataForSave.entscheidungKristalhöhle);
+                break;
+        }
+        Template.ƒS.Speech.clear();
+        Template.ƒS.Speech.hide();
+        await Template.ƒS.update(1);
+    }
+    Template.firstStella = firstStella;
 })(Template || (Template = {}));
 //last one
 var Template;
@@ -622,39 +544,138 @@ var Template;
         await Template.ƒS.Character.show(Template.characters.stella, Template.characters.stella.pose.normal, Template.ƒS.positionPercent(0, 0));
         await Template.ƒS.update();
         await Template.ƒS.Speech.tell(Template.characters.stella, "Hey Hey");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Oh du bist wieder da");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich hoffe das dir nichts passiert ist, du gingst letztes Mal so apprubt");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Oh du bist wieder da", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich hoffe das dir nichts passiert ist, du gingst letztes Mal so apprubt", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Oh ja ja natürlich, ich musste, ähm brauchte nur etwas Zeit für ähm dinge");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Tut mir leid ich will ungern darüber reden.");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Muss es nicht, dennoch freut es mich das du deinen Weg erneut in meine Tür gefunden hast");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Muss es nicht, dennoch freut es mich das du deinen Weg erneut in meine Tür gefunden hast", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Etwas das ich hoffentlich noch viele Male tun werde");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Aber sagt mir,");
         await Template.ƒS.Speech.tell(Template.characters.stella, "War Alessa Arg böse das ich gegangen bin, ich war keine 10 Schritte Entfernt da wollte ich umdrehen um ihr zu sagen das es nicht an ihr liegt nur, naja hätte ich mich so erklären müssen");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Keine Sorge Stella, Alessa war überhaupt nicth böse auf dich");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Dennoch wird sie sich bestimmt darüber freuen, wenn ihr, ihr das sagt");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Keine Sorge Stella, Alessa war überhaupt nicth böse auf dich", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Dennoch wird sie sich bestimmt darüber freuen, wenn ihr, ihr das sagt", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Sofern ich die chance dazu bekommen sollte");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Oh glaubt mir das werdet ihr");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Oh glaubt mir das werdet ihr", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Wieso seid ihr euch dessen so sicher?");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Weil ein Barkeeper nun Mal seine Informationen hat, aber dies soll sie euch lieber selbst Erzählen");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun denn Stella, wohin werdet ihr eigentlich als nächstes reisen?");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Weil ein Barkeeper nun Mal seine Informationen hat, aber dies soll sie euch lieber selbst Erzählen", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Nun denn Stella, wohin werdet ihr eigentlich als nächstes reisen?", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Ich bin mir nicht sicher, vielleicht laufe ich einfach los und schaue wohin mich meine Füße so tragen");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "So ganz ohne Ziel?");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "So ganz ohne Ziel?", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Auf der Reise wird sich bestimmt eines finden");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Immerhin bin ich weit davon entfernt diese Welt bereits vollends erkundet zu haben");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Wie immer bewundere ich eure Abenteuerlust");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Und doch, so ganz alleine dort draußen habt ihr keine Angst?");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Wie immer bewundere ich eure Abenteuerlust", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Und doch, so ganz alleine dort draußen habt ihr keine Angst?", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Wieso sollte ich. Das schlimmste was mir passieren kann, ist das ich um mein Leben renne");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Und dabei hinfällst und dir das Bein brichst.");
         //Alessa zeigen
-        await Template.ƒS.Speech.tell(Template.characters.alessa, "Du bist wahrlich naiv, alleine durch die Welt reisen.");
-        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Wie lange hast du unser Gespräch bereits belauscht.");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Du bist wahrlich naiv, alleine durch die Welt zu reisen.");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Wie lange hast du unser Gespräch bereits belauscht.", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Lang genug um abermal einen Dramatischen auftritt hinzulegen");
-        await Template.ƒS.Speech.tell(Template.characters.alessa, "Und lang genug um Stella davon zu bewahren etwas derart törrichtes zu machen ");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Und lang genug um Stella davon zu bewahren etwas derart törrichtes zu tun ");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Ich bin überhaupt nicht Naiv, bisher kam ich auch alleine immer sehr gut zurecht");
-        await Template.ƒS.Speech.tell(Template.characters.alessa, "vermutlich schon, aber so alleine durch die Welt reisen ist doch auch furchtbar einsam. Möchtest du nicht lieber in Begleitung reise ");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "vermutlich schon, aber so alleine durch die Welt reisen ist doch auch furchtbar einsam. Möchtest du nicht lieber in Begleitung reisen ");
         await Template.ƒS.Speech.tell(Template.characters.stella, "ist das etwa, ein angebot das du mitkommst");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Leider nicht, ich bin nicht so die große Abenteurerin. Aber");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Ich kenne da jemanden, den du vielleicht kennenlernen willst");
+        //Stella grübelnd zeigten
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Ach echt! wen?");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Dass muss dir die Person schon selber sagen.");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "...");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "...");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "...", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "...");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "...");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "...", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "kommt da no-", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Jaa jaa, götter wo war ich.");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "IIIIIIIIIch kenne da vielleicht jemanden den du kennenlernen willst");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "...");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "IIIIIIIICCHH KEEEEENNNEE, meine güte Eli jetzt schwing deinen Arsch hier herüber.");
+        // aneigen von Eli
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Hey...");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "...Hey?...Freut mich dich kennen zu lernen");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Gleichfalls");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "und du gehst gerne auf Abenteuer?");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Ja, kann man so sagen. Ich bin zumindest gut im Kämpfen");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "ah, das lingt doch nett");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Das ann man sich ja nicht mehr durchlesen");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Eli geh nicht nur gerne auf Abenteuer, er LIEBT ES. Und er kann nichtt nu gu Kämpfen, sondern war Mal der Beste Schwertkämfer im ganzen Königreich.");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Und du müsstes Mal sei-");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "ALESSA!");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "das reicht.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "aber wieso denn?");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "das war doch gerade so spannend.");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "echt, fandest du?");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "klar, mister mysteriöser namensloser Krieger.");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Tzz");
+        //Elidibuss Smile
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Elidibus, oder um es in Lessys Worten zu sagen Eli");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Lessy?", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "psssstt, wir reden später");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Was ein schöner Name. Ich bin Stella");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Freut mich dich kennen zu lernen Stella.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "das sagtest du bereits.");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "stimmmt, tut mir leid");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Sagt, falls Alessa nicht über dich log. Kennst du echt sovie von der Welt?");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "man munkelt, das ich dass tue");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "was würdest du gerne sehen?");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Alles");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Was meinst du mit alles?");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Naa eben alles, halt alles alles alles.");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Okay das könnte ein wenig dauern, da hast du dir echt was vorgenommen");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Hab ja auch noch ein ganzes Leben vor mir, ich denke das wird schon");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Mit der Einstellung definitiv. Viel glück dir Stella, ich hoffe das wir uns eine-");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Gööter Eli, ich schwöre bei all meinen Krähen wenn du nich gleich");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Ist ja gut! Lessy dich hab ich damals auch nicht so gedrängt.");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Unsere Geschichte musste Riem damals auch nicht durchlesen um eine Note zu geben, also mach hinne");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Wo ist Riem?");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Ich hab nee bessere frage, Wer ist Riem ");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich hab nee noch bessere, was ist Riem", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Du sprichst in rätseln mein Freund");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Aber du hast doch, ihr habt doch gerade noch ääähh", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "pssst jetzt, wir waren gerade in einem wichtigen Gespräch.");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Also Eli");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Ja, ja");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Also Stella, wie mir Lessy berichtete seid ihr, äh du noch sehr unerfahren in dieser Welt.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Würde ich zwar nicht sagen, aber eventuell schon");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Alles kann ich dir zwar vielleicht nicht zeigen, aber ein wenig kenne ich");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Wenn du willst, begleite ich dich gerne auf deiner nächsten reise");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "klar, warum nicht.");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "klasse dann lass uns aufbbrechen.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Was jetzt sofort?");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Du willst doch alles sehen, Zeit ist ein Luxus den wir uns nicht mehr erlauben können.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Ou-Okay dann gehen wir?");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Nach dir, meine junge Abenteurerin.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Warte eins noch.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, " " + Template.dataForSave.nameBarkeeper + " Es war mir ein Freude dich kennen lernen zu dürfen, dich natürlich auch Alessa. Bis zum nächsten Mal!");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Ich verlass mich drauf.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Okay, dann tschau. Ich komm so oft vorbei wie ich es schaffe");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ab und zu reicht und jetzt geh, ich sehe doch schon wie du auf heißen ohlen tanzt.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Wieso sollte man auf-");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "das erzählt dir Elidibus auf euren reisen und jetzt ab.");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Okay okay, beeeeeeeyyy");
+        //hide Stella
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Danke dir Lessy.");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Pass auf sie auf");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Werde ich.");
+        // hide Elidibus
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Also die beiden sind ja schon süß, aber irgendwie war das jetzt sehr schnell oder nicht?", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Leider ja, aber dir ist Eli ja auch nicht die ganze Zeit auf deinen füßen rumgetanzt.");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Au das stelle ich mir schmerzhaft vor", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "War es, aber ich hoffe das es dass Wert war.");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Bestimmt, das wird schon mit den beiden", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "ach du hast ja keine ahnung.");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Was hat es eigentlich mit diesem Song auf sich?", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Das ist eine lange geschichte, die ich dir gerne ein ander Mal erzähle, wenn wir mehr Zeit haben");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ach wir sehen uns also noch öfter?", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Nur falls du dich als Rätselkönig erwiesen hast");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Ich glaube das habe ich mitlerweile.", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Das wird sich noch Zeigen.");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Was steht jetzt eigentlich bei dir an?", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Gleich, wir müssen auf unser timing achten.");
+        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Timing für was?", true, "spieler");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Einen dramatischen auftritt, oder eher abschied.");
+        // gehen zur Tür und die beiden sehen wie sie lachend tränend singen      
     }
     Template.fivedStella = fivedStella;
 })(Template || (Template = {}));
@@ -847,8 +868,8 @@ var Template;
                         await Template.ƒS.Speech.tell(Template.characters.alessa, "Hat dieser zufällig Graues Haar?");
                         await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Wenn ich michr echt entsinne hatte er dies");
                         await Template.ƒS.Speech.tell(Template.characters.alessa, "Wird dieser in näherer Zukunft erneut hier aufschlagen.");
-                        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "In ein paar wieso fragt ihr");
-                        await Template.ƒS.Speech.tell(Template.characters.alessa, "Nur eines versprechesnwegen");
+                        await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "In ein paar Tagen, wieso fragt ihr");
+                        await Template.ƒS.Speech.tell(Template.characters.alessa, "Nur eines versprechens wegen");
                         await Template.ƒS.Speech.tell(Template.characters.alessa, "Nun wirklich Gute Nacht");
                         break;
                     case versteckterSong.iPickAntwort:
@@ -1309,7 +1330,7 @@ var Template;
         await Template.ƒS.Speech.tell(Template.characters.alessa, "kamst du denn viel rum?");
         await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Alessa was soll das.");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Was soll was");
-        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Du weißt genau was ich meine, Sitzt dich einfach zu mir, fräst mich diese belangenlosen sachen.");
+        await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Du weißt genau was ich meine, Sitzt dich einfach zu mir, fragst mich diese belangenlosen sachen.");
         await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "Götter was willst du? Geld, eine Eskorte? Wieso suchst du mich auf");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Was wenn ich einfach nur mit einem alten Freund reden will");
         await Template.ƒS.Speech.tell(Template.characters.elidibusButWithoutName, "So siehst du das also. Dann habe ich dir nichts zu sagen");
@@ -1318,7 +1339,7 @@ var Template;
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Okay Elidibus bitte, lass uns reden");
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "Wieso sollte ich, du hast deine Wahl doch getroffen und wie ich sehe fiel dir das nicht besonders schwer");
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "lebwohl Alessa");
-        await Template.ƒS.Speech.tell(Template.characters.alessa, "Wie ich sehe immer noch das gleiche Kind");
+        await Template.ƒS.Speech.tell(Template.characters.alessa, "Immer noch das gleiche Kind");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Sag mal hörst du eigentlich immer noch diese Melodie, oder hat sie dich in deiner Gier nach Blut auch velassen");
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "Wag es nicht so mit mir zu sprechen");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Oder was");
@@ -1332,8 +1353,8 @@ var Template;
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Ich wüsste nicht was dich das angeht");
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "Kannst du endlich mit diesen Spielchen aufhören");
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "3 JAHRE");
-        await Template.ƒS.Speech.tell(Template.characters.elidibus, "3 Jahre lang hast du mich ignoriert und dein ebstes gegeben mir aus dem Weg zu gehen und mir nichts dir nichts");
-        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Kommst du hier angetanzt und raubst mich jeden nerve den ich noch habe wegen einer Dummen Geschichte");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "3 Jahre lang hast du mich ignoriert und dein ebstes gegeben mir aus dem Weg zu gehen und dir nichts mir nichts");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Kommst du hier angetanzt und raubst mich jeden nerve den ich noch habe, wegen einer Dummen Geschichte");
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "Ich flehe dich an, bitte lass endlich das Stück was du von mir übrig gelassen hast in frieden. ");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "dann beantworte mir endlich meine frage!");
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "Wieso, was ist so wichtig daran");
@@ -1344,7 +1365,7 @@ var Template;
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "Zufrieden?");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Erinnerst du dich an unser versprechen");
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "Natürlich aber was hat das jetzt damit zu tun");
-        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Götter Alessa komm zu deiner begiere");
+        await Template.ƒS.Speech.tell(Template.characters.elidibus, "Götter Alessa komm zu deiner begier");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Dann erzähl es mir");
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "Alessa du hast deine Antwort lass mich nun endlich infrieden");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Elidibus, bitte");
@@ -1358,7 +1379,6 @@ var Template;
         await Template.ƒS.Speech.tell(Template.characters.elidibus, "Alessa sag mir nicht das");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "Ich fand es Elidibus. Obwohl eigentlich");
         await Template.ƒS.Speech.tell(Template.characters.alessa, "fand Stella mich");
-        //In nem Buch müsste ich hier zu der nächsten Szene cutten weil Dramaturgie und so
     }
     Template.secondEllidibusDestiny = secondEllidibusDestiny;
 })(Template || (Template = {}));
@@ -1383,7 +1403,7 @@ var Template;
         await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "darf ich fragen wieso?", true, "spieler");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Darfst du nicht, sagen wir einfach, ich bin vom Schicksal verflucht");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Tut mir leid" + Template.dataForSave.nameBarkeeper + "heute werden wir kein langes Gespräch führen");
-        await Template.ƒS.Speech.tell(Template.characters.stella, "Ich wollte nur vorbei kommen, um mich für den Tipp zu bedanken. Ich denke in ein paar Tagen komm ich wieder, ich muss nur noch etwas davor in Ordnung bringen");
+        await Template.ƒS.Speech.tell(Template.characters.stella, "Ich wollte nur vorbei kommen, um mich für den Tipp zu bedanken. Ich denke in drei Tagen Tagen komm ich wieder, ich muss nur noch etwas davor in Ordnung bringen");
         await Template.ƒS.Speech.tell(Template.characters.stella, "Bis zum nächsten Mal");
         await Template.ƒS.Speech.tell(Template.dataForSave.nameBarkeeper, "Bis zum nächsten Mal", true, "spieler");
         //Stella verlässt Bar animation
@@ -1452,6 +1472,8 @@ var Template;
                 await Template.ƒS.Speech.tell(Template.characters.stella, "Der Rest ist als dank für den guten Tipp");
                 break;
         }
+        Template.ƒS.Speech.clear();
+        Template.ƒS.Speech.hide();
     }
     Template.secondStellaEinsamerberg = secondStellaEinsamerberg;
 })(Template || (Template = {}));

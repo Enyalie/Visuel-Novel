@@ -38,7 +38,6 @@ namespace Template {
         await ƒS.Speech.tell(characters.elidibusButWithoutName, "Wir sehen uns in 2 Wochen");
         await ƒS.Speech.tell(dataForSave.nameBarkeeper, "Ach eines noch Jäger", true, "Spieler");
         await ƒS.Speech.tell(dataForSave.nameBarkeeper, "Nächstes mal, sagt mir doch bitte den wahren grund");
-        //Speeker Elidibus tzz einspielen
         await ƒS.Speech.tell(characters.narrator, "Der Jäger geht hinaus in die Nacht");
 
 
