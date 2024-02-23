@@ -25,6 +25,12 @@ canvas {
   height: 100%;
 }
 
+choicesCSSClass {
+  color: rebeccapurple;
+  background-color: #cf82bf;
+
+}
+
 
 /***** SPLASH SCREEN *****/
 dialog[type="splash"] {
@@ -48,36 +54,115 @@ dialog[type="splash"]>p {
   margin-left: auto;
 }
 
+.choicesCSSClass,
+.gameMenu button {
+  border: 1 rgb(1, 1, 1);
+  border-radius: 0;
+  background: linear-gradient( rgba(18, 18, 18, 0) 20%, rgba(122, 5, 7, 0) 50%, rgb(81, 7, 7) 70%, rgb(24, 1, 4) 100%);
+  background-size: 250%;
+  background-position: 0 0;
+  color: rgb(38, 14, 14);
+  padding: 5px 40px 10px;
+  font-size: 30px;
+  transition-duration: .5s;
+}
+
+.choicesAlessa,
+.gameMenu button {
+  border: 1 rgb(1, 1, 1);
+  border-radius: 0;
+  background: linear-gradient( rgba(18, 18, 18, 0) 20%, rgba(45, 11, 79, 0) 50%, rgb(4, 12, 156) 70%, rgb(16, 3, 42) 100%);
+  background-size: 250%;
+  background-position: 0 0;
+  color: rgb(38, 14, 14);
+  padding: 5px 40px 10px;
+  font-size: 30px;
+  transition-duration: .5s;
+}
+
 
 /***** SPEECH, CONTENT, NAMES *****/
+content {
+  margin: 25px 30px;
+  display: block;
+}
+
 speech {
   position: absolute;
   bottom: 0px;
   left: 0px;
   color: beige;
-  background-color: rgba(57, 16, 24, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
   height: 13%;
 }
 
 speech content {
-  color: rgb(255, 203, 237);
-  font-size: 1.7vmin;
-  position: absolute;
-  left: 10px;
+  color: rgb(251, 251, 251);
+  font-size: 2.5vmin;
+  position: center;
+  left: 40px;
 }
 
 name {
-  font-size: 2vmin;
+  font-size: 2.5vmin;
   display: block;
-  color: rgb(218, 69, 171);
+  color: rgb(255, 255, 255);
   margin-bottom: 10px;
 }
 
 speech[class="spieler"] content {
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255);
 }
 
 speech[class="spieler"] name {
+  color: rgb(219, 153, 0);
+}
+
+speech[class="alessa"]content{
+  color: rgb(rgb(255, 255, 255), green, blue);
+}
+
+speech[class="alessa"] name {
+  color: rgb(92, 9, 143);
+}
+
+speech[class="stella"]content{
+  color: rgb(rgb(255, 255, 255), green, blue);
+}
+
+speech[class="stella"] name{
+  color: rgb(6, 214, 229);
+}
+
+speech[class="Elidibus"]content{
   color: rgb(255, 255, 255);
 }
+
+speech[class="Elidibus"] name {
+  color: rgb(183, 11, 11);
+}
+
+
+/***** METER BAR *****/
+meter::-webkit-meter-bar {
+  background-color: #ececec;
+}
+
+meter[id="alessaMeter"] {
+  visibility: hidden;
+  position: absolute;
+  transform:rotate(-90deg);
+  bottom: 50%;
+  left: -14%;
+  width: 35%;
+  height: 10%;
+}
+
+meter[id="alessaMeter"]::-webkit-meter-optimum-value {
+  background-image: linear-gradient(
+    #046315 100%
+  );
+  
+}
+

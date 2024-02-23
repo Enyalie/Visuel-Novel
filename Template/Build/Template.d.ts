@@ -1,4 +1,7 @@
 declare namespace Template {
+    function endScene(): ƒS.SceneReturn;
+}
+declare namespace Template {
     export import ƒ = FudgeCore;
     export import ƒS = FudgeStory;
     let transition: {
@@ -8,15 +11,62 @@ declare namespace Template {
             edge: number;
         };
     };
+    function middleToLeft(): ƒS.AnimationDefinition;
+    function middleToLeave(): ƒS.AnimationDefinition;
+    function middeToLLeaveFast(): ƒS.AnimationDefinition;
+    function middeToLLeaveSlow(): ƒS.AnimationDefinition;
+    function leftToLLeave(): ƒS.AnimationDefinition;
+    function leftToLLeaveSlow(): ƒS.AnimationDefinition;
+    function rightToLLeaveNormal(): ƒS.AnimationDefinition;
+    function leftToLLeaveNormal(): ƒS.AnimationDefinition;
+    function enterToMiddle(): ƒS.AnimationDefinition;
+    function enterToMiddleslow(): ƒS.AnimationDefinition;
+    function enterToMiddleFast(): ƒS.AnimationDefinition;
+    function enterToRight(): ƒS.AnimationDefinition;
+    function rightToMiddle(): ƒS.AnimationDefinition;
+    function leftToMoreLeft(): ƒS.AnimationDefinition;
+    function MoreLeftToLeave(): ƒS.AnimationDefinition;
+    function enterToRightExtrem(): ƒS.AnimationDefinition;
+    function RightExtremToLeave(): ƒS.AnimationDefinition;
     let sound: {
-        drop: string;
+        tavern: string;
+        alessa: string;
+        fragment: string;
+        soldir: string;
+        living: string;
+        fall: string;
+        drink: string;
+        searching: string;
+        footstep: string;
+        drag: string;
+        pour: string;
     };
     let locations: {
-        citySteampunk: {
+        tavernDay: {
             name: string;
             background: string;
         };
-        Sandstrand: {
+        tavernSunset: {
+            name: string;
+            background: string;
+        };
+        tavernNight: {
+            name: string;
+            background: string;
+        };
+        blackout: {
+            name: string;
+            background: string;
+        };
+        newFriends: {
+            name: string;
+            background: string;
+        };
+        unfinished: {
+            name: string;
+            background: string;
+        };
+        end: {
             name: string;
             background: string;
         };
@@ -47,6 +97,7 @@ declare namespace Template {
             origin: ƒ.ORIGIN2D;
             pose: {
                 normal: string;
+                sectret: string;
             };
         };
         elidibusButWithoutName: {
@@ -63,6 +114,13 @@ declare namespace Template {
                 normal: string;
             };
         };
+        StellaAndElidibus: {
+            name: string;
+            origin: ƒ.ORIGIN2D;
+            pose: {
+                normal: string;
+            };
+        };
     };
     let dataForSave: {
         nameBarkeeper: string;
@@ -71,10 +129,11 @@ declare namespace Template {
         entscheidungKristalhöhle: boolean;
         variableKristalhöhle: boolean;
         variableRätselsceneAlessa1: boolean;
+        secretEndingPartOne: boolean;
+        secretEndingPartTwo: boolean;
+        meterBarAlessa: boolean;
+        alessaScore: number;
     };
-}
-declare namespace Template {
-    function Scene(): ƒS.SceneReturn;
 }
 declare namespace Template {
     function firstAlessa(): ƒS.SceneReturn;
@@ -99,6 +158,9 @@ declare namespace Template {
 }
 declare namespace Template {
     function secondEllidibusDestiny(): ƒS.SceneReturn;
+}
+declare namespace Template {
+    function secretEnding(): ƒS.SceneReturn;
 }
 declare namespace Template {
     function thirdStella(): ƒS.SceneReturn;
