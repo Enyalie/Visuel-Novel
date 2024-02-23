@@ -5,11 +5,11 @@ namespace Template {
     console.log("first Scene Stella starting");
     await ƒS.Location.show(locations.tavernDay);
     await ƒS.Speech.tell(characters.narrator, "Du bist Bartender einer gut besuchten Bar, in einem kleinen Ort.");
-    await ƒS.Speech.tell(characters.narrator, "Als Barkeeper ist es nicht nur deine Aufgabe köstliche Getränke zu servieren, sondern auch als Psychologe zu diensten zu sein");
+    await ƒS.Speech.tell(characters.narrator, "Als Barkeeper ist es nicht nur deine Aufgabe köstliche Getränke zu servieren, sondern auch als Psychologe zu Diensten zu sein");
     await ƒS.Speech.tell(characters.narrator, "Und wer weiß vielleicht kannst du wirklich etwas verändern");
     await ƒS.Speech.tell(characters.narrator, "Doch dies ist keine Geschichte, über einen Bartender und seine Gäste.");
-    await ƒS.Speech.tell(characters.narrator, "Dies ist eine Geschichte, über einen mürrischen Kriger");
-    await ƒS.Speech.tell(characters.narrator, "einer vermumten Doktorin");
+    await ƒS.Speech.tell(characters.narrator, "Dies ist eine Geschichte, über einen mürrischen Krieger");
+    await ƒS.Speech.tell(characters.narrator, "einer vermummten Doktorin");
     await ƒS.Speech.tell(characters.narrator, " und einer....Da kommt sie ja schon.")
     ƒS.Sound.play(sound.tavern, 1.2,true);
 
