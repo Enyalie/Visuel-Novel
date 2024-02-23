@@ -34,11 +34,12 @@ choicesCSSClass {
 
 /***** SPLASH SCREEN *****/
 dialog[type="splash"] {
-  background-image: url("Images/Backgrounds/space.jpg");
+  background-image: url("Images/Bckground/tavernbacground normal.jpg");
   /* background-repeat: repeat; */
   /* background-size: contain; */
   width: 100%;
   height: 100%;
+  text-align: center;
 }
 
 dialog[type="splash"]>p {
