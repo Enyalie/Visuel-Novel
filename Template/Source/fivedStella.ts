@@ -160,7 +160,7 @@ namespace Template {
     ƒS.update(5);
     await ƒS.Speech.tell(characters.narrator, "Beende die Geschichte, wann immer du dich bereit dazu fühlst.");
     await ƒS.Speech.tell(characters.narrator, "Bist du dir sicher?");
-    await ƒS.Speech.tell(characters.narrator, "Danke fürs Spielen");
+    await ƒS.Speech.tell(characters.narrator, "Danke fürs Spielen und bis zu der nächsten random Bar, in der man dich begrüßt.");
     ƒS.Sound.fade(sound.living, 0,2);
     
 
